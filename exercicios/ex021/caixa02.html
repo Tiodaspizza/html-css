@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grouping Tags</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: dimgray;
+      }
+
+      header {
+        background-color: white;
+        padding: 10px;
+        margin: 10px;
+        text-align: center;
+      }
+
+      nav {
+        background-color: rgb(138, 138, 127);
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        box-shadow: 5px 3px 7px  1px rgba(49, 32, 32, 0.479);
+      }
+
+      nav a {
+        text-decoration: none;
+        color: rgb(32, 5, 5);
+        font-weight: bold;
+        margin: 30px;
+        
+      }
+
+      nav > a:hover {
+        text-decoration: underline;
+      }
+
+      main {
+        background-color: white;
+        padding: 10px;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      article {
+        background-color: lightgray;
+        padding: 5px;
+        text-align: center;
+      }
+
+      article > aside {
+        background-color: beige;
+      }
+
+      footer {
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 1px;
+        margin: 0px;
+      }
+
+      .assuntos {
+        font-weight: bold;
+        color: red;
+        font-size: 2.5rem;
+      }
+footer > p {
+      margin: 0px;  
+}
+
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>meu site</h1>
+      <nav>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+      </nav>
+    </header>
+    <main>
+      <section id="Assuntos" class="assuntos">Sports Tecnologia</section> 
+      <section id="noticias">
+        <article>
+          <h2>Noticias sobre o brasil</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+            ullam nobis neque aliquid et, magnam distinctio natus, nulla error
+            voluptatum corrupti sunt repellendus rem dolorum, eos ipsa earum
+            sit? Tempore atque soluta qui, eligendi sint perspiciatis cum.
+            Aliquid, architecto. Voluptas corrupti commodi accusamus itaque
+            nostrum quam veniam, illum modi iusto.
+          </p>
+          <aside>Artigo escrito por Matheus Novaes</aside>
+        </article>
+        <article></article>
+      </section>
+    </main>
+    <footer><p>Desenvolvido por Matheus Novaes</p></footer>
+  </body>
+</html>

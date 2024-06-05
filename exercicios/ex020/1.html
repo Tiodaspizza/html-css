@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>treinando pseudoclasses e hover</title>
+    <style>
+        div{
+            display: inline-block;
+            background-color: lightslategrey;
+            border: 1px solid black;
+            text-align:center;
+            height: 200px;
+            width: 200px;
+        }
+
+        div:hover{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>treinando pseudoclasses e hover</h1>
+    <div id="d1">01</div>
+    <div id="d2">02</div>
+    <div id="d3">03</div>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .playstation {
+            color: blue;
+            font: bold 16px arial;
+        }
+        
+        .jogosps4 > li {
+            visibility: hidden;
+        }
+
+        .jogosps4:hover > li {
+            visibility: visible;
+            color: darkblue;
+            font: bold 16px arial;
+        }
+
+        .nintendo {
+            color: red;
+        }
+
+        .jogosnintendo > li {
+            visibility: hidden;
+        }
+        
+        .jogosnintendo:hover > li {
+            visibility: visible;
+            font: bold 16px arial;
+            color: red;
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>Testando conhecimento</h1>
+    <p>Consoles que eu mais gosto</p>
+    <ul class="playstation">
+        <li>Playstation</li>
+    </ul>
+    <ul class="jogosps4"> 
+        <li>Passe o mouse abaixo</li>
+        <li>The Witcher 3</li>
+        <li>Bloodborne</li>
+        <li>Resident Evil</li>
+    </ul>
+    <ul class="nintendo">
+        <li>Nintendo</li>
+    </ul>
+    <ul class="jogosnintendo"> 
+        <li>Jogos Nintendo</li>
+        <li>Xenoblade</li>
+        <li>Donkey Kong</li>
+        <li>Mario</li> 
+    </ul>
+
+</body>
+</html>

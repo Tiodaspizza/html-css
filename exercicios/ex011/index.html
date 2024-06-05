@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem Dinamica</h1>
+    <p>tente abrir esse site em varios dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+
+    <picture>
+        <source media="(max-width: 780px)" srcset="imagens/foto-p.png" type="image/png"> <!--imagem pequena -->
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png "><!--imagem media -->
+        <img src="imagens/foto-g.png" alt="Imagem"> <!--imagem grande as mesmas precisam estar em ordem para funcionar P M G -->
+    </picture>
+<!-- imagens dinamicas para adaptcao de tela exemplo celular computar e TV-->
+
+
+    <h1>reproduzinho audio</h1>
+    <p>vamo aprender a repoduzir audio</p>
+  
+    <!-- mp3 WAV OGG formatos audio navegadores-->
+<audio preload="metada" autoplay controls loop>
+    <source src="midia/darth-vader.mp3" type="audio/mpeg">
+    <source src="midia/guanacast-33.ogg" type="audio.ogg">
+    <source src="media/guanacas-33.wav" type="audio.wav">
+    <p>infelizmente seu navegador nao consegue reproduzir audio. <a href="midia/guanacast-33">clique aqui para baixar o arquivo mp3</a></p>
+</audio>
+    
+
+
+</body>
+</html>

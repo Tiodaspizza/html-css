@@ -3,14 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tes</title>
+    <title>Fundo fixo de tela</title>
     <style>
         body{
             height: 100vh;
-            background-color: black;
-            background-image: url(imagens/wallpaper002.jpg);
-            background-position: center center;
-            background-repeat: no-repeat;
+            background: #000 url('imagens/wallpaper002.jpg') center top/cover no-repeat fixed;
             background-size: cover;
         }
 main{
@@ -22,6 +19,10 @@ main{
     border-radius: 15px;
     
 }
+
+        /* shorthand-backgound
+        color > image > position > [size] attachment */
+
 
     </style>
 </head>
